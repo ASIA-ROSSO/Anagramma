@@ -22,7 +22,7 @@ public class Ricerca {
 			disponibili.add(parola.charAt(i)) ;
 		}
 		
-		// avvia la ricorsione
+		// avvia la ricorsione: CASO INIZIALE
 		cerca("", 0, disponibili) ; 
 		
 		return this.soluzione ;
@@ -67,6 +67,6 @@ Soluzione parziale: una parte dell'anagramma già costruito (i primi caratteri).
 Livello: numero di lettere di cui è composta la soluzione parziale.
 Soluzione finale: soluzione di lunghezza N -> caso terminale
 Caso terminale: salvare la soluzione trovate
-Generazione delle nuove soluzioni: provare a aggiungere una lettera, scegliendola
+(Obiettivo di ogni livello) Generazione delle nuove soluzioni: provare a aggiungere una lettera, scegliendola
 tra quelle che non sono ancora state utilizzate (nella soluzione parziale).
 */
